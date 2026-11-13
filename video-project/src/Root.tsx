@@ -1,16 +1,24 @@
+import React from "react";
 import {Composition} from "remotion";
-import {MainVideo} from "./MainVideo";
+import {loadFont} from "@remotion/google-fonts/Inter";
+import {GTAOptimization} from "./GTAOptimization";
+import {TOTAL_DURATION} from "./theme";
+
+loadFont("normal", {
+  weights: ["400", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
-        id="MainVideo"
-        component={MainVideo}
-        durationInFrames={900}
+        id="GTAOptimization"
+        component={GTAOptimization}
+        durationInFrames={TOTAL_DURATION}
         fps={30}
-        width={1920}
-        height={1080}
+        width={1080}
+        height={1920}
       />
     </>
   );
