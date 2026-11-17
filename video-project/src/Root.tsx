@@ -4,6 +4,7 @@ import {loadFont} from "@remotion/google-fonts/Inter";
 import {GTAOptimization} from "./GTAOptimization";
 import {KineticShowcase} from "./kinetic-showcase/KineticShowcase";
 import {ThreeShowcase} from "./three-showcase/ThreeShowcase";
+import {BattleOfCannae} from "./battle-of-cannae";
 import {TOTAL_DURATION} from "./theme";
 
 loadFont("normal", {
@@ -33,6 +34,14 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="ThreeShowcase"
         component={ThreeShowcase}
+        durationInFrames={900}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BattleOfCannae"
+        component={BattleOfCannae}
         durationInFrames={900}
         fps={30}
         width={1080}
