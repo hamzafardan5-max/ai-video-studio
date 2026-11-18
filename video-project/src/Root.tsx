@@ -5,6 +5,7 @@ import {GTAOptimization} from "./GTAOptimization";
 import {KineticShowcase} from "./kinetic-showcase/KineticShowcase";
 import {ThreeShowcase} from "./three-showcase/ThreeShowcase";
 import {BattleOfCannae} from "./battle-of-cannae";
+import {BattleOfCannaeV2} from "./battle-of-cannae-v2";
 import {TOTAL_DURATION} from "./theme";
 
 loadFont("normal", {
@@ -42,6 +43,14 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="BattleOfCannae"
         component={BattleOfCannae}
+        durationInFrames={900}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="BattleOfCannaeV2"
+        component={BattleOfCannaeV2}
         durationInFrames={900}
         fps={30}
         width={1080}
